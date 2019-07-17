@@ -1,15 +1,20 @@
 package camdev.sothoeun.asia.retrofitdemo.model.respone;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 import camdev.sothoeun.asia.retrofitdemo.model.Category;
 import camdev.sothoeun.asia.retrofitdemo.model.Pagination;
 
 public class Respone {
-
+    @SerializedName("CODE")
     private String cod;
+    @SerializedName("MESSAGE")
     private String message;
+    @SerializedName("DATA")
     private List<Category> categories;
+    @SerializedName("PAGINATION")
     private Pagination paginations;
 
     public String getCod() {

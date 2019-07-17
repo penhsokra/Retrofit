@@ -6,6 +6,6 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 public interface CategoryService {
-    @GET("GET /v1/api/categories")
+    @GET("/v1/api/categories")
     Call<Respone> getCategory();
 }

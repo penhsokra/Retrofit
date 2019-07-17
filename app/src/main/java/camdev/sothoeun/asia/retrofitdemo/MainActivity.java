@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Respone> call, Response<Respone> response) {
                 List<Category> categories = response.body().getCategories();
-                Log.e("1111",""+categories.toString());
+                Log.e("1111",""+categories);
             }
 
             @Override
